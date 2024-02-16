@@ -1,0 +1,16 @@
+Attrition By Gender Color code:
+Male: #9467bd
+Female: #ffbb78
+
+Dashboard size: 1580×900
+
+Attrition Count
+IF [Attrition]='Yes' THEN 1 ELSE 0
+END
+
+Attrition Rate
+SUM([Attrition Count])/SUM([Employee Count])
+
+Active Employees
+SUM([Employee Count])-SUM([Attrition Count])
+
